@@ -1,1 +1,38 @@
 # TWEB-FORMS
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscrição nos jogos escolares</title>
+</head>
+<body>
+   <header>
+    
+    <h1>Inscrição nos jogos escolares</h1>
+    Preencha os campos com suas informações.
+   </header>
+   
+   <main>
+    <form id="inscrição-jogos" action="inscrições-jogos" method="post" enctype="multipart/form-data">
+        
+    <fieldset>
+        <legend>Identificação do atleta</legend>
+    <label for="nome-atleta">Nome completo do atleta (obrigatório)</label>
+    <input type="text" id="nome-atleta" name="nome-atleta" required>
+
+    <label for="email-atleta">E-mail de contato (obrigatório)</label>
+    <input type="email" id="email-atleta" name="email-atleta" required>
+    </fieldset>
+
+    <fieldset>
+        <legend>Participação nos jogos</legend>
+        <label for="equipe">Nome da equipe</label>
+    <input type="text" id="equipe" name="equipe" value="Equipe Horizonte">
+    </fieldset>
+    </form>
+
+    
+   </main>
+</body>
+</html>
